@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> registration-form.html</title>
+</head>
+
+<body>
+    <center>
+        <h1>
+            Registration Form
+            <hr>
+        </h1>
+    </center>
+
+    <form action="./after-registration.html" method="get">
+
+        <input style="font: caption;" type="text" name="User name" placeholder=" Username" maxlength="16" required> <br>
+        <br>
+        <input style="font: caption;" type="text" name="User father name" placeholder=" Father name" maxlength="16"
+            required> <br> <br>
+        <input style="font: caption;" type="email" name="User email" placeholder=" Email" maxlength="40" required> <br>
+        <br>
+        <input style="font: caption;" type="password" name="User password" placeholder="Password" maxlength="15"
+            required> <br> <br>
+        <input style="font: caption;" type="number" name="User number" placeholder="Phone Number" required> <br> <br>
+
+        <p style="font: caption;">Select Gender:</p>
+
+        <label style="font: caption;" for="Male"> Male </label>
+        <input type="radio" name="gender" required checked="checked">
+
+        <label style="font: caption;" for="Female"> Female </label>
+        <input type="radio" name="gender" required>
+
+        <label style="font: caption;" for="Others"> Others </label>
+        <input type="radio" name="gender" required>
+        <br><br>
+
+
+        <p style="font: caption;">Select Your Country:</p>
+
+        <select name="Country" required>
+            <option value="Country" disabled selected>Country</option>
+            <option name="Country" value="Afghanistan">Afghanistan</option>
+            <option name="Country" value="Albania">Albania</option>
+            <option name="Country" value="Algeria">Algeria</option>
+            <option name="Country" value="Andorra">Andorra</option>
+            <option name="Country" value="Angola">Angola</option>
+            <option name="Country" value="Argentina">Argentina</option>
+            <option name="Country" value="Armenia">Armenia</option>
+            <option name="Country" value="Australia">Australia</option>
+            <option name="Country" value="Austria">Austria</option>
+            <option name="Country" value="Azerbaijan">Azerbaijan</option>
+            <option name="Country" value="Bahamas">Bahamas</option>
+            <option name="Country" value="Bahrain">Bahrain</option>
+            <option name="Country" value="Bangladesh">Bangladesh</option>
+            <option name="Country" value="Barbados">Barbados</option>
+            <option name="Country" value="Belarus">Belarus</option>
+            <option name="Country" value="Belgium">Belgium</option>
+            <option name="Country" value="Belize">Belize</option>
+            <option name="Country" value="Benin">Benin</option>
+            <option name="Country" value="Bhutan">Bhutan</option>
+            <option name="Country" value="Bolivia">Bolivia</option>
+            <option name="Country" value="Botswana">Botswana</option>
+            <option name="Country" value="Brazil">Brazil</option>
+            <option name="Country" value="Brunei">Brunei</option>
+            <option name="Country" value="Bulgaria">Bulgaria</option>
+            <option name="Country" value="Burundi">Burundi</option>
+            <option name="Country" value="Cambodia">Cambodia</option>
+            <option name="Country" value="Cameroon">Cameroon</option>
+            <option name="Country" value="Canada">Canada</option>
+            <option name="Country" value="Chile">Chile</option>
+            <option name="Country" value="China">China</option>
+            <option name="Country" value="Colombia">Colombia</option>
+            <option name="Country" value="Comoros">Comoros</option>
+            <option name="Country" value="Costa Rica">Costa Rica</option>
+            <option name="Country" value="Croatia">Croatia</option>
+            <option name="Country" value="Cuba">Cuba</option>
+            <option name="Country" value="Cyprus">Cyprus</option>
+            <option name="Country" value="Denmark">Denmark</option>
+            <option name="Country" value="Ecuador">Ecuador</option>
+            <option name="Country" value="Egypt">Egypt</option>
+            <option name="Country" value="El Salvador">El Salvador</option>
+            <option name="Country" value="Eritrea">Eritrea</option>
+            <option name="Country" value="Estonia">Estonia</option>
+            <option name="Country" value="Eswatini">Eswatini</option>
+            <option name="Country" value="Ethiopia">Ethiopia</option>
+            <option name="Country" value="Fiji">Fiji</option>
+            <option name="Country" value="Finland">Finland</option>
+            <option name="Country" value="France">France</option>
+            <option name="Country" value="Gabon">Gabon</option>
+            <option name="Country" value="Gambia">Gambia</option>
+            <option name="Country" value="Georgia">Georgia</option>
+            <option name="Country" value="Germany">Germany</option>
+            <option name="Country" value="Ghana">Ghana</option>
+            <option name="Country" value="Greece">Greece</option>
+            <option name="Country" value="Grenada">Grenada</option>
+            <option name="Country" value="Guatemala">Guatemala</option>
+            <option name="Country" value="Guinea">Guinea</option>
+            <option name="Country" value="Guyana">Guyana</option>
+            <option name="Country" value="Haiti">Haiti</option>
+            <option name="Country" value="Honduras">Honduras</option>
+            <option name="Country" value="Hungary">Hungary</option>
+            <option name="Country" value="Iceland">Iceland</option>
+            <option name="Country" value="India">India</option>
+            <option name="Country" value="Indonesia">Indonesia</option>
+            <option name="Country" value="Iran">Iran</option>
+            <option name="Country" value="Iraq">Iraq</option>
+            <option name="Country" value="Ireland">Ireland</option>
+            <option name="Country" value="Israel">Israel</option>
+            <option name="Country" value="Italy">Italy</option>
+            <option name="Country" value="Jamaica">Jamaica</option>
+            <option name="Country" value="Japan">Japan</option>
+            <option name="Country" value="Jordan">Jordan</option>
+            <option name="Country" value="Kazakhstan">Kazakhstan</option>
+            <option name="Country" value="Kenya">Kenya</option>
+            <option name="Country" value="Kuwait">Kuwait</option>
+            <option name="Country" value="Kyrgyzstan">Kyrgyzstan</option>
+            <option name="Country" value="Laos">Laos</option>
+            <option name="Country" value="Latvia">Latvia</option>
+            <option name="Country" value="Lebanon">Lebanon</option>
+            <option name="Country" value="Liberia">Liberia</option>
+            <option name="Country" value="Libya">Libya</option>
+            <option name="Country" value="Lithuania">Lithuania</option>
+            <option name="Country" value="Luxembourg">Luxembourg</option>
+            <option name="Country" value="Madagascar">Madagascar</option>
+            <option name="Country" value="Malawi">Malawi</option>
+            <option name="Country" value="Malaysia">Malaysia</option>
+            <option name="Country" value="Maldives">Maldives</option>
+            <option name="Country" value="Mali">Mali</option>
+            <option name="Country" value="Malta">Malta</option>
+            <option name="Country" value="Mauritania">Mauritania</option>
+            <option name="Country" value="Mauritius">Mauritius</option>
+            <option name="Country" value="Mexico">Mexico</option>
+            <option name="Country" value="Moldova">Moldova</option>
+            <option name="Country" value="Monaco">Monaco</option>
+            <option name="Country" value="Mongolia">Mongolia</option>
+            <option name="Country" value="Montenegro">Montenegro</option>
+            <option name="Country" value="Morocco">Morocco</option>
+            <option name="Country" value="Mozambique">Mozambique</option>
+            <option name="Country" value="Myanmar">Myanmar</option>
+            <option name="Country" value="Namibia">Namibia</option>
+            <option name="Country" value="Nepal">Nepal</option>
+            <option name="Country" value="Netherlands">Netherlands</option>
+            <option name="Country" value="New Zealand">New Zealand</option>
+            <option name="Country" value="Nicaragua">Nicaragua</option>
+            <option name="Country" value="Niger">Niger</option>
+            <option name="Country" value="Nigeria">Nigeria</option>
+            <option name="Country" value="North Korea">North Korea</option>
+            <option name="Country" value="Norway">Norway</option>
+            <option name="Country" value="Oman">Oman</option>
+            <option name="Country" value="Pakistan">Pakistan</option>
+            <option name="Country" value="Palestine">Palestine</option>
+            <option name="Country" value="Panama">Panama</option>
+            <option name="Country" value="Paraguay">Paraguay</option>
+            <option name="Country" value="Peru">Peru</option>
+            <option name="Country" value="Philippines">Philippines</option>
+            <option name="Country" value="Poland">Poland</option>
+            <option name="Country" value="Portugal">Portugal</option>
+            <option name="Country" value="Qatar">Qatar</option>
+            <option name="Country" value="Romania">Romania</option>
+            <option name="Country" value="Russia">Russia</option>
+            <option name="Country" value="Rwanda">Rwanda</option>
+            <option name="Country" value="Saudi Arabia">Saudi Arabia</option>
+            <option name="Country" value="Senegal">Senegal</option>
+            <option name="Country" value="Serbia">Serbia</option>
+            <option name="Country" value="Seychelles">Seychelles</option>
+            <option name="Country" value="Sierra Leone">Sierra Leone</option>
+            <option name="Country" value="Singapore">Singapore</option>
+            <option name="Country" value="Slovakia">Slovakia</option>
+            <option name="Country" value="Slovenia">Slovenia</option>
+            <option name="Country" value="Somalia">Somalia</option>
+            <option name="Country" value="South Africa">South Africa</option>
+            <option name="Country" value="South Korea">South Korea</option>
+            <option name="Country" value="Spain">Spain</option>
+            <option name="Country" value="Sri Lanka">Sri Lanka</option>
+            <option name="Country" value="Sudan">Sudan</option>
+            <option name="Country" value="Suriname">Suriname</option>
+            <option name="Country" value="Sweden">Sweden</option>
+            <option name="Country" value="Switzerland">Switzerland</option>
+            <option name="Country" value="Syria">Syria</option>
+            <option name="Country" value="Taiwan">Taiwan</option>
+            <option name="Country" value="Tajikistan">Tajikistan</option>
+            <option name="Country" value="Tanzania">Tanzania</option>
+            <option name="Country" value="Thailand">Thailand</option>
+            <option name="Country" value="Togo">Togo</option>
+            <option name="Country" value="Tunisia">Tunisia</option>
+            <option name="Country" value="Turkey">Turkey</option>
+            <option name="Country" value="Turkmenistan">Turkmenistan</option>
+            <option name="Country" value="Uganda">Uganda</option>
+            <option name="Country" value="Ukraine">Ukraine</option>
+            <option name="Country" value="UAE">UAE</option>
+            <option name="Country" value="UK">UK</option>
+            <option name="Country" value="United States">United States</option>
+            <option name="Country" value="Uruguay">Uruguay</option>
+            <option name="Country" value="Uzbekistan">Uzbekistan</option>
+            <option name="Country" value="Vanuatu">Vanuatu</option>
+            <option name="Country" value="Vatican City">Vatican City</option>
+            <option name="Country" value="Venezuela">Venezuela</option>
+            <option name="Country" value="Vietnam">Vietnam</option>
+            <option name="Country" value="Yemen">Yemen</option>
+            <option name="Country" value="Zambia">Zambia</option>
+            <option name="Country" value="Zimbabwe">Zimbabwe</option>
+        </select>
+        <br><br>
+
+        <p style="font: caption;">Give Your Picture:</p>
+
+        <input style="font: caption;" type="file" name="User file" required>
+        <br><br>
+
+        <p style="font: caption;">Date Of Birth:</p>
+
+        <input style="font: caption;" type="date" name="User date of birth" required> <br> <br> <br>
+
+
+        <input style="font: caption;" type="checkbox" name="User verification tick" required
+            value="I Agree to Terms & Conditions">I Agree to
+        Terms & Conditions
+        <br><br><br>
+
+        <button style="font: caption;">SUBMIT</button>
+
+    </form>
+</body>
+
+</html>

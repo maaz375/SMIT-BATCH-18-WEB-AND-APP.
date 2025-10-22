@@ -1,0 +1,40 @@
+/* Font style of all text */
+body{
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1%;
+}
+
+/* Background color of web page */
+body {
+    background-color: seashell;
+}
+
+/* Text color of h1 and h2 */
+h1 {
+    color: maroon;
+}
+
+h2 {
+    color: darkolivegreen;
+}
+
+/* Paragraph color */
+.colorname {
+    color: pink;
+}
+
+.hexcolor {
+    color: #17cac4;
+}
+
+.rgbcolor {
+    color: rgb(10, 84, 158);
+}
+
+/* Div box */
+.borderandbackgroundcolor {
+    border: 2px solid #454545;
+    background-color: #ffecec;
+    color: rgb(194, 139, 29);
+}
