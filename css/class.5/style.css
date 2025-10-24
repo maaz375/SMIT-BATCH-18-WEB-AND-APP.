@@ -1,0 +1,32 @@
+/* .abd:hover{
+    background-color: blue;
+} */
+
+/* .abd:focus{
+    background-color: brown;
+    color: rgb(237, 233, 233);
+}
+
+.abs:active{
+    background-color: chocolate;
+    color: chartreuse;
+} */
+
+/* .ab{
+    min-width: 10px;
+    max-width: 30px;
+    background-color: cornflowerblue;
+} */
+
+.as{
+    width: 450px;
+    height: 90px;
+    background-color: crimson;
+    overflow: scroll;
+}
+
+.ass{
+    width: 450px;
+    height: 90px;
+    background-color: coral;
+}

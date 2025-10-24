@@ -1,0 +1,106 @@
+/* Body setup */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+/* Background image */
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./image1.png") no-repeat center center/cover;
+  transform: scale(1.2);
+  opacity: 0;
+  animation: bgZoom 3s ease forwards;
+}
+
+/* Animation for background */
+@keyframes bgZoom {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 15px white);
+  opacity: 0;
+  animation: logoFade 3s ease 1s forwards;
+}
+
+/* Logo animation */
+@keyframes logoFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Buttons */
+.buttons {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  animation: buttonsFade 3s ease 2s forwards;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 30px;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+.signup {
+  border-color: cyan;
+  color: cyan;
+}
+
+.signup:hover {
+  background: cyan;
+  color: black;
+}
+
+@keyframes buttonsFade {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
