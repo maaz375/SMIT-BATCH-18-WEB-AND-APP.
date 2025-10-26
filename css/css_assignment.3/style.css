@@ -1,0 +1,40 @@
+body{
+    font-family: sans-serif;
+    margin: 38px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #202020;
+}
+
+table{
+    width: 750px;
+    text-align: justify;
+     margin: 0 auto;
+}
+
+th{
+    color:  #3e80dd;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 2px solid #69a8ff;
+}
+
+td{
+    vertical-align: top;
+    padding: 6px;
+    font-size: 16px;
+}
+
+img{
+    width: 120px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+td:last-child{
+    color: #202020;
+    font-weight: bold;
+}
