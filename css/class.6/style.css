@@ -1,0 +1,27 @@
+p{
+    border-width: 5px;
+    border-style: solid;
+    border-bottom-color: red;
+    border-top-color: blue;
+    border-right-color: yellow;
+    border-left-color: green;
+}
+
+.q{
+    width: 300px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.w{
+    width: 150px;
+    background-color: chocolate;
+}
+
+.as{
+    width: 50%;
+    height: 30px;
+    background-color: aqua;
+    padding: 10px;
+    margin: 30px 30px 30px 30px ;
+}
