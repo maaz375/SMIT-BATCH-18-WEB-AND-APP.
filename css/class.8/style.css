@@ -1,0 +1,36 @@
+.main {
+    background-color: black;
+    height: 200px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+
+    /* jab display flex karo ghy to wo row ho jaye gha to agr usmy justify content center row ma chaly gha (horizontali) */
+}
+
+.one {
+    background-color: antiquewhite;
+    order: 0;
+}
+
+.two {
+    background-color: aqua;
+    order: -1;
+}
+
+.three {
+    background-color: brown;
+}
+
+.four {
+    background-color: cadetblue;
+    order: 1;
+}
+
+.five {
+    background-color: yellow;
+}
