@@ -1,0 +1,83 @@
+/* .main {
+    background-color: black;
+    height: 200px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+
+    jab display flex karo ghy to wo row ho jaye gha to agr usmy justify content center row ma chaly gha (horizontali)
+}
+
+.child{
+    width: 30px;
+    height: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.one {
+    background-color: antiquewhite;
+    align-self: auto    ;
+}
+
+.two {
+    background-color: aqua;
+}
+
+.three {
+    background-color: brown;
+}
+
+.four {
+    background-color: cadetblue;
+}
+
+.five {
+    background-color: yellow;
+}
+
+.six{
+    background-color: blue;
+}
+
+.seven{
+    background-color: burlywood;
+}
+
+.eight{
+    background-color: chartreuse;
+}
+
+.nine{
+    background-color: brown;
+}
+
+.ten{
+    background-color: yellow;
+}
+
+.eleven{
+    background-color: crimson;
+}
+
+.twelve{
+    background-color: darkblue;
+}
+
+.thirteen{
+    background-color: darkorange;
+}
+
+.fourteen{
+    background-color: coral;
+}
+
+.fifteen{
+    background-color: cyan;
+} */
+
+ol{
+    list-style-type: armenian;
+}
