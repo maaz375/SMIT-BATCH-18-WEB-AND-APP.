@@ -4,23 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Page</title>
+    <title> My Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
 
     <header class="header">
-        <div>
-            <img class="logo1" src="./logo.JPG" alt="my logo">
-            <p class="name"> MAAZ </p>
-        </div>
+        <div class="logo">MAAZ's Portfolio Page</div>
+        <nav class="nav">
+            <a href=".">Home</a>
+            <a href=".">About</a>
+            <a href=".">Projects</a>
+            <a href=".">Contact</a>
+        </nav>
     </header>
+
+    <section class="hero">
+        <div class="hero-left">
+            <div> <img class="profileimg" src="./pi.JPG" alt="Profile Image"> </div>
+        </div>
+        <div class="hero-right">
+            <h1>Hello, it's me <span> MAAZ </span></h1>
+            <p>I'm a Web Developer and Graphic Designer who creates responsive, modern, and creative websites for every need...!</p>
+            <button class="btn">Hire Me</button>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">React</div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <a href="../css_assignment.1/index.html"> <img class="p1" src="./css.assignment.1.png" alt="Project 1">
+                </a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <a href="./2nd.ass.png"> <img class="p2" src="./2nd.ass.png" alt="Project 2"></a>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <a href="./3rd.ass.png"> <img class="p3" src="./3rd.ass.png" alt="Project 3"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact-left">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="4"></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+        <div class="contact-right">
+            <h2>Contact</h2>
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@maaz_cyz3?is_from_webapp=1&sender_device=pc"> <img class="ttlogo"
+                        src="./tiktoklogo.png" alt="Tiktok logo"> </a>
+                <a href="https://www.instagram.com/maaz_cyz3?igsh=MTUwY3poNHVkbzh4ZQ%3D%3D&utm_source=qr"> <img
+                        class="instalogo" src="./instalogo.png" alt="Instagram Logo"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 MAAZ.K. All rights reserved.</p>
+    </footer>
 
 </body>
 
