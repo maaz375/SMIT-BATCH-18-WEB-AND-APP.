@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -28,17 +31,41 @@
                 sign up
             </h3>
 
-            <form action="">
-                <input required type="text" placeholder="First Name">
-                <input required type="text" placeholder="Last Name">
-                <input required type="number" placeholder="Phone Number">
-                <input required type="email" placeholder="Email">
-                <input required type="password" placeholder="Password">
-                <input required type="password" placeholder="Confirm Password">
+            <form action="./login.html" method="get">
+                <input maxlength="20" required type="text" placeholder="First Name">
+                <i class="fa-solid fa-user fa-lg fnl" style="color: #000000;"></i>
+                <input maxlength="20" required type="text" placeholder="Last Name">
+                <i class="fa-solid fa-user fa-lg lnl" style="color: #000000;"></i>
+                <input maxlength="11" required type="number" placeholder="Phone Number">
+                <i class="fa-solid fa-phone fa-lg pnl" style="color: #000000;"></i>
+                <input maxlength="30" required type="email" placeholder="Email">
+                <i class="fa-solid fa-envelope fa-lg el" style="color: #000000;"></i>
+                <input maxlength="17" required type="password" placeholder="Password">
+                <i class="fa-solid fa-lock fa-lg pl" style="color: #000000;"></i>
+                <input maxlength="17" required type="password" placeholder="Confirm Password">
+                <i class="fa-solid fa-lock fa-lg cpl" style="color: #000000;"></i>
                 <button>sign up</button>
             </form>
 
+            <p class="go">Already Have An Account?</p>
+
+            <a class="log" href="./login.html">Login</a>
+
         </div>
+
+        <p class="lstt"> DESIGNED BY MAAZ.K. </p>
+
+        <a href="https://github.com/maaz375">
+            <i class="fa-brands fa-square-github fa-2xl ghl" style="color: #ffffff;"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/maaz-khatri-8b1666376/">
+            <i class="fa-brands fa-square-linkedin fa-2xl lil" style="color: #0041b3;"></i>
+        </a>
+
+        <a href="https://www.instagram.com/maaz_cyz3/">
+            <i class="fa-brands fa-square-instagram fa-2xl igl" style="color: #ffffff;"></i>
+        </a>
 
     </div>
 
