@@ -24,10 +24,9 @@ alert(food)
 
 var numberOfChildren = 1;
 var partnerName = "Maaz";
-var location = "Germany";
 var job = "Web Developer";
 
-var fortune = "You will be a " + job + " in " + location + " married to " + partnerName + " with " + numberOfChildren + " children.";
+var fortune = "You will be a " + job + " married to " + partnerName + " with " + numberOfChildren + " children.";
 
 alert(fortune);
 
