@@ -131,7 +131,7 @@ var age1 = currentYear - birthYear;
 var age2 = age1 - 1;
 
 document.write("<b> The Age Calculator </b> <br> <br>")
-document.write("Current Year: " + currentYear +'<br>')
+document.write("Current Year: " + currentYear + '<br>')
 document.write("Birth Year: " + birthYear + '<br> <br>')
 document.write("They are either " + age2 + " or " + age1 + " years old. <br> <br> <br> <br>");
 
@@ -146,4 +146,55 @@ var area = pi * radius * radius;
 document.write("<h2> <b> The Geometrizer </b> </h2>");
 document.write("Radius of a circle: " + radius + '<br>');
 document.write("The circumference is: " + circumference + '<br>');
-document.write("The area is: " + area);
+document.write("The area is: " + area + '<br> <br> <br> <br>');
+
+
+
+var a = 10
+
+document.write("Result: <br>")
+document.write("The value of a is: " + a + '<br>')
+document.write(".............................. <br> <br>")
+
+++a;
+document.write("The value of ++a is: " + a + '<br>')
+document.write("Now the value of a is: " + a + '<br> <br> <br>')
+
+document.write("The value of a++ is: " + a + '<br>')
+a++;
+document.write("Now the value of a is: " + a + '<br> <br> <br>')
+
+--a;
+document.write("The value of --a is: " + a + '<br>')
+document.write("Now the value of a is: " + a + '<br> <br> <br>')
+
+document.write("The value of a-- is: " + a + '<br>')
+a--;
+document.write("Now the value of a is: " + a + '<br> <br> <br> <br> <br>')
+
+
+
+
+var a = 2, b = 1;
+
+document.write("a is: " + a + '<br>')
+document.write("b is: " + b + '<br>')
+
+var result = --a - --b + ++b + b--;
+
+document.write("Result is " + result + '<br> <br> <br>')
+
+
+
+var snack = 'egg';
+var age = 15;
+var maximunAge = 80;
+var quantity = 5;
+var answer = (maximunAge - age) * quantity;
+
+document.write("<h2> The Life Time Supply Calculator </h2> <br> <br>")
+document.write("Faviourite Snack: " + snack + '<br>')
+document.write("Current Age: " + age + '<br>')
+document.write("Estimated Maximum Age: " + maximunAge + '<br>')
+document.write("Amount of snacks per day: " + quantity + '<br> <br>')
+document.write("You will need " + answer + " eggs to last you until the ripe old age of " + maximunAge)
