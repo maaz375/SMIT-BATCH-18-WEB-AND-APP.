@@ -1,0 +1,34 @@
+:root{
+    --bg1:rgb(255, 42, 42);
+    --bg2:yellow;
+    --wid1:100px;
+}
+
+td{
+    background-color: var(--bg1);
+    padding: 10px;
+    border: 2px solid black;
+    width: var(--wid1);
+}
+
+table.two{
+    border-collapse: inherit;
+}
+
+@keyframes moveRight {
+    /* 0%{transform: translateX(0);}
+    100%{ transform: translateX(300px);} */
+    /* 0%{transform: translateY(0);}
+    100%{ transform: translateY(100px);} */
+}
+
+@keyframes rotateBox {
+    0%{transform: rotate(0);}
+    100%{ transform: rotate(360deg);}
+}
+
+table.one{
+    border-spacing: 5px;
+    animation: rotateBox 0000000.00001s alternate-reverse infinite;
+    /* animation: moveRight 00000.00001s alternate-reverse infinite; */
+}
