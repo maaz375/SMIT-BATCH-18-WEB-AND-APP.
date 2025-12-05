@@ -190,7 +190,7 @@ var snack = 'egg';
 var age = 15;
 var maximunAge = 80;
 var quantity = 5;
-var answer = (maximunAge - age) * quantity;
+var answer = (maximunAge - age) * quantity;hgtrf
 
 document.write("<h2> The Life Time Supply Calculator </h2> <br> <br>")
 document.write("Faviourite Snack: " + snack + '<br>')
