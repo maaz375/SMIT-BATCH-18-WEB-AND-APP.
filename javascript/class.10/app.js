@@ -58,8 +58,8 @@ var car = ['toyota', 'bmw', 'honda'];
 
 var car = ['toyota', 'bmw', 'honda', 'mazda', 'audi'];
 
-console.log(car)
+console.log(car);
 
 var newCar = car.slice(2, 5);
 
-console.log(newCar)
+console.log(newCar);
