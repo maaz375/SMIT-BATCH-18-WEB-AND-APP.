@@ -1,6 +1,5 @@
 var display = document.getElementById('display');
-var buttons = document.getElementsByClassName('btn'); // select only buttons
-
+var buttons = document.getElementsByClassName('btn');
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].onclick = function () {
         var value = this.value;
