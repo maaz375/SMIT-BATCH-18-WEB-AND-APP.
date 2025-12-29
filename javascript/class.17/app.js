@@ -64,6 +64,10 @@
 
 
 
-var str = 'his car is red also his bike is red also his house is red';
+// var str = 'his car is red also his bike is red also his house is red';
 
-console.log(str.charAt(1));
+// console.log(str.charAt(1));
+
+
+// let name = "shehbaz";
+// console.log(name.charAt(0).toUpperCase() + name.slice(1));
