@@ -1,0 +1,93 @@
+body {
+    background: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #27ae60;
+    color: white;
+}
+
+.deleteAll {
+    background: #e74c3c;
+}
+
+.deleteAll:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background: #f1f1f1;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    margin-left: 5px;
+    background: #555;
+    font-size: 12px;
+}
+
+.edit {
+    background: #27ae60;
+}
+
+.edit:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.delete {
+    background: #e74c3c;
+}
+
+.delete:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}

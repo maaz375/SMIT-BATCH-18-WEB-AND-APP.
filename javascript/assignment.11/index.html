@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="todo-container">
+        <h2>My Todo List</h2>
+
+        <input type="text" id="taskInput" placeholder="Enter your task">
+
+        <div class="buttons">
+            <button onclick="addTask()">Add</button>
+            <button class="deleteAll" onclick="deleteAll()">Delete All</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
