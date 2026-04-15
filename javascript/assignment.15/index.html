@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
-
 <body>
 
-    <div class="div1">
-        <div class="div2">
-            <h2>Add Student</h2>
-            <input id="namee" type="text" placeholder="Name">
-            <input id="age" type="number" placeholder="Age">
-            <input id="marks" type="number" placeholder="Marks">
-            <button onclick="add()">Add Student</button>
+<div class="container">
+
+    <!-- Add Student -->
+    <div class="card">
+        <h3>Add Student</h3>
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Name">
+            <input type="number" id="age" placeholder="Age">
+            <input type="number" id="marks" placeholder="Marks">
+        </div>
+        <button class="add-btn" onclick="addStudent()">Add Student</button>
+    </div>
+
+    <!-- Student List -->
+    <div class="card">
+        <h3>Student List</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Marks</th>
+                    <th>Result</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+        </table>
+
+        <div class="footer">
+            Total Students: <span id="total">0</span>
         </div>
     </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
 
 
 
