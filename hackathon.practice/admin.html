@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 style="text-align:center;">Admin Panel (Orders)</h2>
+
+<div id="orders"></div>
+
+<script>
+let orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+let div = document.getElementById("orders");
+
+orders.forEach(order => {
+    div.innerHTML += `
+        <div class="card">
+            <h3>Order ID: ${order.id}</h3>
+            <p>Name: ${order.name}</p>
+            <p>Phone: ${order.phone}</p>
+            <p>City: ${order.city}</p>
+            <p>Payment: ${order.payment}</p>
+        </div>
+    `;
+});
+</script>
+
+</body>
+</html>
