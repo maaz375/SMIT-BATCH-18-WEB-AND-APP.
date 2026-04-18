@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand"><span class="logo-h">H</span> HelpHub AI</div>
+            <div class="nav-links">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="explore.html">Explore</a>
+                <a href="create-request.html">Create Request</a>
+                <a href="messages.html">Messages</a>
+                <a href="profile.html">Profile</a>
+            </div>
+            <div class="nav-actions">
+                <button class="notif-btn">Notifications</button>
+                <button class="ai-center-btn" ><a href="ai-center.html">Open AI Center</a></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        <header class="hero-section">
+            <p class="label">DASHBOARD</p>
+            <h1>Welcome back, Ayesha Khan.</h1>
+            <p class="subtitle">Your command center for requests, AI insights, helper momentum, and live community activity.</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <p class="stat-label">TRUST SCORE</p>
+                <h2>92%</h2>
+                <p class="stat-desc">Driven by solved requests and consistent support.</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-label">HELPING</p>
+                <h2>2</h2>
+                <p class="stat-desc">Requests where you are currently listed as a helper.</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-label">OPEN REQUESTS</p>
+                <h2>2</h2>
+                <p class="stat-desc">Community requests currently active across the feed.</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-label">AI PULSE</p>
+                <h2>1 trends</h2>
+                <p class="stat-desc">Trend count detected in the latest request activity.</p>
+            </div>
+        </div>
+
+        <div class="dashboard-content">
+            <!-- Feed Left -->
+            <div class="feed-section">
+                <div class="feed-header">
+                    <div>
+                        <p class="stat-label">RECENT REQUESTS</p>
+                        <h2>What the community needs right now</h2>
+                    </div>
+                    <button class="go-feed">Go to feed</button>
+                </div>
+
+                <!-- Request Card 1 -->
+                <div class="req-card">
+                    <div class="tag-group">
+                        <span class="tag t-design">Design</span>
+                        <span class="tag t-medium">Medium</span>
+                        <span class="tag t-open">Open</span>
+                    </div>
+                    <h3>Looking for Figma feedback on a volunteer event poster</h3>
+                    <p>I have a draft poster for a campus community event and want sharper hierarchy, spacing, and CTA copy.</p>
+                    <div class="skill-group">
+                        <span class="skill">Figma</span>
+                        <span class="skill">Poster</span>
+                        <span class="skill">Design Review</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="user-meta">
+                            <strong>Ayesha Khan</strong>
+                            <span>Lahore • 1 helper interested</span>
+                        </div>
+                        <button class="open-btn">Open details</button>
+                    </div>
+                </div>
+
+                <!-- Request Card 2 -->
+                <div class="req-card">
+                    <div class="tag-group">
+                        <span class="tag t-career">Career</span>
+                        <span class="tag t-low">Low</span>
+                        <span class="tag t-solved">Solved</span>
+                    </div>
+                    <h3>Need mock interview support for internship applications</h3>
+                    <p>Applying to frontend internships and need someone to practice behavioral and technical interview questions with me.</p>
+                    <div class="skill-group">
+                        <span class="skill">Interview Prep</span>
+                        <span class="skill">Career</span>
+                        <span class="skill">Frontend</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="user-meta">
+                            <strong>Sara Noor</strong>
+                            <span>Remote • 2 helpers interested</span>
+                        </div>
+                        <button class="open-btn">Open details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Right -->
+            <aside class="sidebar">
+                <div class="notif-header">
+                    <p class="stat-label">NOTIFICATIONS</p>
+                    <h3>Latest updates</h3>
+                </div>
+
+                <div class="notif-list">
+                    <div class="notif-card">
+                        <div class="notif-info">
+                            <h4>New helper matched to your responsive portfolio request</h4>
+                            <p>Match • 12 min ago</p>
+                        </div>
+                        <span class="status-badge unread">Unread</span>
+                    </div>
+
+                    <div class="notif-card">
+                        <div class="notif-info">
+                            <h4>Your trust score increased after a solved request</h4>
+                            <p>Reputation • 1 hr ago</p>
+                        </div>
+                        <span class="status-badge unread">Unread</span>
+                    </div>
+
+                    <div class="notif-card">
+                        <div class="notif-info">
+                            <h4>AI Center detected rising demand for interview prep</h4>
+                            <p>Insight • Today</p>
+                        </div>
+                        <span class="status-badge read">Read</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+</body>
+
+<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helplytics AI - Authenticate</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="auth-wrapper">
+        <div class="auth-container">
+            <!-- Left Side: Community Access Card -->
+            <div class="info-side">
+                <p class="overline">COMMUNITY ACCESS</p>
+                <h1>Enter the support network.</h1>
+                <p class="desc">Choose a demo identity, set your role, and jump into a multi-page product flow designed for asking, offering, and tracking help with a premium interface.</p>
+                <ul class="feature-list">
+                    <li><span>•</span> Role-based entry for Need Help, Can Help, or Both</li>
+                    <li><span>•</span> Direct path into dashboard, requests, AI Center, and community feed</li>
+                    <li><span>•</span> Persistent demo session powered by LocalStorage</li>
+                </ul>
+            </div>
+
+            <!-- Right Side: Form Card -->
+            <div class="form-side">
+                <p class="overline-teal">LOGIN / SIGNUP</p>
+                <h2 id="form-title">Authenticate your community profile</h2>
+
+                <!-- Main Auth Form -->
+                <form id="authForm">
+                    <div id="signup-fields" style="display: none;">
+                        <div class="input-group">
+                            <label>User Name</label>
+                            <input type="text" id="userName" placeholder="e.g. Ayesha Khan">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" id="email" placeholder="community@helphub.ai" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" id="main-btn" class="btn-primary">Continue to dashboard</button>
+                    
+                    <p class="toggle-text">
+                        <span id="toggle-msg">Don't have an account?</span> 
+                        <a href="javascript:void(0)" onclick="toggleMode()" id="toggle-link">Signup</a>
+                    </p>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

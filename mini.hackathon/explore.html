@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - HelpHub AI</title>
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/explore.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="premium-bg">
+
+    <nav class="navbar">
+        <div class="nav-brand"><span class="logo-circle">H</span> HelpHub AI</div>
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="explore.html" class="active">Explore</a>
+            <a href="leaderboard.html">Leaderboard</a>
+            <a href="notifications.html">Notifications</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Dark Header -->
+        <header class="explore-hero">
+            <p class="eyebrow">EXPLORE / FEED</p>
+            <h1>Browse help requests with filterable community context.</h1>
+            <p class="subtext">Filter by category, urgency, skills, and location to surface the best matches.</p>
+        </header>
+
+        <div class="explore-grid">
+            <!-- Sidebar Filters -->
+            <aside class="sidebar-filters">
+                <p class="section-tag">FILTERS</p>
+                <h2 class="sidebar-title">Refine the feed</h2>
+
+                <div class="input-group">
+                    <label>Category</label>
+                    <div class="select-wrapper">
+                        <select id="catFilter">
+                            <option>All categories</option>
+                            <option>Web Development</option>
+                            <option>Design</option>
+                            <option>Career</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Urgency</label>
+                    <div class="select-wrapper">
+                        <select id="urgencyFilter">
+                            <option>All urgency levels</option>
+                            <option>High</option>
+                            <option>Medium</option>
+                            <option>Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Skills</label>
+                    <textarea placeholder="React, Figma, Git/GitHub"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label>Location</label>
+                    <textarea placeholder="Karachi, Lahore, Remote"></textarea>
+                </div>
+            </aside>
+
+            <!-- Main Feed -->
+            <main class="feed-area" id="exploreFeed">
+                <!-- Cards will be injected here via JS -->
+            </main>
+        </div>
+    </div>
+
+    <script src="js/explore.js"></script>
+</body>
+</html>

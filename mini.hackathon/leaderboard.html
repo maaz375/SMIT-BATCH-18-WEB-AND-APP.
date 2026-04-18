@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - HelpHub AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/leaderboard.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <p class="eyebrow">LEADERBOARD</p>
+            <h1>Recognize the people who keep the community moving.</h1>
+            <p class="subtext">Trust score, contribution count, and badges create visible momentum for reliable helpers.</p>
+        </header>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-brand">
+                <span class="logo-circle">H</span> HelpHub AI
+            </div>
+            <div class="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="explore.html">Explore</a>
+                <a href="leaderboard.html" class="active">Leaderboard</a>
+            </div>
+        </nav>
+
+        <!-- Main Content Grid -->
+        <div class="leaderboard-grid">
+            
+            <!-- Left Column: Rankings -->
+            <section class="rankings-card">
+                <p class="section-tag">TOP HELPERS</p>
+                <h2 class="section-title">Rankings</h2>
+
+                <div class="rank-list">
+                    <!-- Rank Item 2 -->
+                    <div class="rank-item">
+                        <div class="user-info">
+                            <div class="avatar av-dark">HA</div>
+                            <div class="details">
+                                <h3>#2 Hassan Ali</h3>
+                                <p>JavaScript, React, Git/GitHub</p>
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <span class="percentage">88%</span>
+                            <span class="contrib">24 contributions</span>
+                        </div>
+                    </div>
+
+                    <!-- Rank Item 3 -->
+                    <div class="rank-item">
+                        <div class="user-info">
+                            <div class="avatar av-orange">SN</div>
+                            <div class="details">
+                                <h3>#3 Sara Noor</h3>
+                                <p>Python, Data Analysis</p>
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <span class="percentage">74%</span>
+                            <span class="contrib">11 contributions</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Column: Badge System -->
+            <section class="badge-card">
+                <p class="section-tag">BADGE SYSTEM</p>
+                <h2 class="section-title">Trust and achievement</h2>
+
+                <div class="achievement-list">
+                    <!-- Hassan Ali Progress -->
+                    <div class="achieve-item">
+                        <div class="achieve-header">
+                            <h3>Hassan Ali</h3>
+                            <p>Code Rescuer • Bug Hunter</p>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Sara Noor Progress -->
+                    <div class="achieve-item">
+                        <div class="achieve-header">
+                            <h3>Sara Noor</h3>
+                            <p>Community Voice</p>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>

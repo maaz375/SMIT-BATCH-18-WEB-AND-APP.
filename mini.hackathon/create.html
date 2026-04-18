@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post a Request - Helplytics</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .create-container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .form-group { margin-bottom: 25px; }
+        .form-group label { display: block; font-weight: 700; margin-bottom: 10px; color: var(--dark-green); }
+        
+        /* Fixed: Title input width and styling */
+        #reqTitle { 
+            width: 100%; 
+            padding: 14px; 
+            border: 1.5px solid #eee; 
+            border-radius: 12px; 
+            font-size: 15px;
+            box-sizing: border-box;
+            transition: 0.3s;
+        }
+        #reqTitle:focus { border-color: var(--teal); outline: none; }
+
+        textarea { width: 100%; padding: 15px; border: 1.5px solid #eee; border-radius: 12px; height: 120px; font-family: inherit; box-sizing: border-box; }
+        textarea:focus { border-color: var(--teal); outline: none; }
+
+        .ai-tags-box { background: #f0fdfa; padding: 15px; border-radius: 12px; border: 1px dashed var(--teal); margin-top: 10px; display: none; }
+        .tag-pill { background: var(--teal); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px; margin-right: 5px; display: inline-block; margin-bottom: 5px; }
+        
+        /* Dashboard layout fix */
+        .main-content { padding: 40px; background: #fdfbf7; min-height: 100vh; }
+    </style>
+</head>
+<body>
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 style="color: var(--teal);">Helplytics.</h2>
+            <nav style="margin-top: 50px;">
+                <ul style="list-style: none; padding: 0; line-height: 3;">
+                    <li><a href="index.html" style="color: white; text-decoration: none; display: flex; align-items: center; gap: 10px;">🏠 Dashboard</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="create-container">
+                <p class="overline-teal">NEW SUBMISSION</p>
+                <h1 style="font-size: 32px; margin-top: 10px;">Post a help request</h1>
+                <p style="color: #666; margin-bottom: 30px;">Describe what you need, and our AI will categorize it for the community.</p>
+
+                <form id="requestForm">
+                    <div class="form-group">
+                        <label>Title of your request</label>
+                        <input type="text" id="reqTitle" placeholder="e.g. Need help fixing MongoDB connection" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Description (Details)</label>
+                        <textarea id="reqDesc" placeholder="Describe the problem in detail... Tip: Use words like 'urgent' for priority help." oninput="simulateAI()"></textarea>
+                    </div>
+
+                    <!-- AI Suggested Tags (Visual Feedback) -->
+                    <div id="aiBox" class="ai-tags-box">
+                        <p style="font-size: 11px; font-weight: 800; margin-bottom: 8px; color: var(--teal);">✨ AI SUGGESTED TAGS</p>
+                        <div id="tagContainer"></div>
+                        <p style="font-size: 10px; color: #666; margin-top: 5px;">*AI tags will be finalized by the server.</p>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 25px;">
+                        <label>Category</label>
+                        <select id="reqCategory" style="width: 100%; padding: 12px; border-radius: 10px; border: 1.5px solid #eee; cursor: pointer;">
+                            <option value="Technical">Technical</option>
+                            <option value="Design">Design</option>
+                            <option value="Business">Business</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; margin-top: 20px; padding: 16px; font-weight: 800;">Publish Request</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/create.js"></script>
+</body>
+</html>

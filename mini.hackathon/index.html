@@ -1,117 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HelpHub UI</title>
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Community Support Network</title>
+    <link rel="stylesheet" href="css/landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="premium-bg">
 
-<!-- NAV -->
-<header class="nav">
-  <div class="logo">H</div>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="logo-circle">H</span> HelpHub AI
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="leaderboard.html">Leaderboard</a>
+            <a href="ai-center.html">AI Center</a>
+        </div>
+        <div class="nav-right">
+            <span class="live-signal">Live community signals</span>
+            <button class="btn-join">Join the platform</button>
+        </div>
+    </nav>
 
-  <ul class="menu">
-    <li><a href="#home">Home</a></li>
-    <li><a href="/pages/explor.html">Explore</a></li>
-    <li><a href="/pages/leaderboard.html">Leaderboard</a></li>
-    <li><a href="pages/aicenter.html">AI Center</a></li>
-  </ul>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-split">
+            <div class="hero-content">
+                <p class="tagline">SMIT GRAND CODING NIGHT 2026</p>
+                <h1>Find help faster.<br>Become help that matters.</h1>
+                <p class="description">HelpHub AI is a community-powered support network for students, mentors, creators, and builders. Ask for help, offer help, track impact, and let AI surface smarter matches across the platform.</p>
+                
+                <div class="hero-actions">
+                    <button class="btn-demo">Open product demo</button>
+                    <button class="btn-post" onclick="window.location.href='create.html'">Post a request</button>
+                </div>
 
-  <div class="nav-btns">
-    <a href="#features" class="ghost">Live community signals</a>
-    <a href="pages/join.html" class="primary">Join</a>
-  </div>
-</header>
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <span class="label">MEMBERS</span>
+                        <h2>384+</h2>
+                        <p>Students, mentors, and helpers in the loop.</p>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">REQUESTS</span>
+                        <h2>72+</h2>
+                        <p>Support posts shared across learning journeys.</p>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">SOLVED</span>
+                        <h2>69+</h2>
+                        <p>Problems resolved through fast community action.</p>
+                    </div>
+                </div>
+            </div>
 
-<!-- HERO -->
-<section class="hero" id="home">
+            <div class="hero-feature">
+                <div class="dark-card">
+                    <div class="card-header">
+                        <p>LIVE PRODUCT FEEL</p>
+                        <div class="sun-orb"></div>
+                    </div>
+                    <h2>More than a form.<br>More like an ecosystem.</h2>
+                    <p class="small-text">A polished multi-page experience inspired by product platforms, with AI summaries, trust scores, contribution signals, notifications, and leaderboard momentum built directly in HTML, CSS, JavaScript, and LocalStorage.</p>
+                    
+                    <div class="feature-item">
+                        <h4>AI request intelligence</h4>
+                        <p>Auto-categorization, urgency detection, tags, rewrite suggestions, and trend snapshots.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Community trust graph</h4>
+                        <p>Badges, helper rankings, trust score boosts, and visible contribution history.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>100%</h3>
+                        <p>Top trust score currently active across the sample mentor network.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <div class="hero-left">
-    <p>SMIT GRAND CODING NIGHT 2026</p>
+        <!-- Core Flow Section -->
+        <section class="core-flow">
+            <div class="section-top">
+                <p class="sub-label">CORE FLOW</p>
+                <div class="flex-title">
+                    <h2>From struggling alone to solving together</h2>
+                    <button class="btn-onboarding"  onclick="window.location.href='onboarding.html'">Try onboarding AI</button>
+                </div>
+            </div>
+            <div class="flow-grid">
+                <div class="flow-box">
+                    <h4>Ask for help clearly</h4>
+                    <p>Create structured requests with category, urgency, AI suggestions, and tags that attract the right people.</p>
+                </div>
+                <div class="flow-box">
+                    <h4>Discover the right people</h4>
+                    <p>Use the explore feed, helper lists, notifications, and messaging to move quickly once a match happens.</p>
+                </div>
+                <div class="flow-box">
+                    <h4>Track real contribution</h4>
+                    <p>Trust scores, badges, solved requests, and rankings help the community recognize meaningful support.</p>
+                </div>
+            </div>
+        </section>
 
-    <h1>
-      Find help faster.<br>
-      Become help that matters.
-    </h1>
-
-    <p class="sub">
-      Community-powered support network for students and developers.
-    </p>
-
-    <div class="btns">
-      <a href="#demo" class="primary">Open Demo</a>
-      <a href="#request" class="outline">Post Request</a>
+        <!-- Featured Requests Section -->
+        <section class="featured-requests">
+            <div class="section-top">
+                <p class="sub-label">FEATURED REQUESTS</p>
+                <div class="flex-title">
+                    <h2>Community problems currently in motion</h2>
+                    <button class="btn-view-all" onclick="window.location.href='explore.html'">View full feed</button>
+                </div>
+            </div>
+            <div class="request-grid" id="requestFeed">
+                <!-- Cards will be injected via JavaScript -->
+            </div>
+        </section>
     </div>
 
-    <div class="stats">
-      <div class="stat">
-        <h2>384+</h2>
-        <p>Members</p>
-      </div>
-      <div class="stat">
-        <h2>72+</h2>
-        <p>Requests</p>
-      </div>
-      <div class="stat">
-        <h2>69+</h2>
-        <p>Solved</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-right">
-    <h2>More than a form.<br>More like an ecosystem.</h2>
-
-    <div class="mini-card">AI request intelligence</div>
-    <div class="mini-card">Community trust graph</div>
-    <div class="mini-card">100% Trust Score</div>
-  </div>
-
-</section>
-
-<!-- FEATURES -->
-<section id="features">
-  <h2>From struggling alone to solving together</h2>
-
-  <div class="cards">
-    <div class="card">Ask for help clearly</div>
-    <div class="card">Discover the right people</div>
-    <div class="card">Track real contribution</div>
-  </div>
-</section>
-
-<!-- REQUESTS -->
-<section id="requests">
-  <h2>Community problems currently in motion</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Need help</h3>
-      <p>Help needed</p>
-      <a href="#details">Open details</a>
-    </div>
-
-    <div class="card">
-      <h3>Portfolio help</h3>
-      <p>Responsive issue</p>
-      <a href="#details">Open details</a>
-    </div>
-
-    <div class="card">
-      <h3>Design feedback</h3>
-      <p>Need feedback</p>
-      <a href="#details">Open details</a>
-    </div>
-  </div>
-</section>
-
-
-
-<script src="app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/landing.js"></script>
 </body>
 </html>

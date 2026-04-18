@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Request - HelpHub AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/create-request.css">
+</head>
+<body>
+
+    <!-- Updated Navbar to match image -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="brand"><span class="logo-h">H</span> HelpHub AI</div>
+            </div>
+            
+            <div class="nav-center">
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="explore.html" class="nav-link">Explore</a>
+                <a href="create-request.html" class="nav-pill active">Create Request</a>
+                <a href="messages.html" class="nav-link">Messages</a>
+                <a href="profile.html" class="nav-link">Profile</a>
+            </div>
+
+            <div class="nav-right">
+                <button class="notif-btn">Notifications</button>
+                <button class="ai-center-btn">Open AI Center</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        <header class="create-hero">
+            <p class="label">CREATE REQUEST</p>
+            <h1>Turn a rough problem into a clear help request.</h1>
+            <p class="subtitle">Use built-in AI suggestions for category, urgency, tags, and a stronger description rewrite.</p>
+        </header>
+
+        <div class="create-grid">
+            <section class="form-container">
+                <div class="input-group">
+                    <label>Title</label>
+                    <input type="text" placeholder="Need review on my JavaScript quiz app before submission">
+                </div>
+                <div class="input-group">
+                    <label>Description</label>
+                    <textarea placeholder="Explain the challenge, your current progress, deadline, and what kind of help would be useful."></textarea>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label>Tags</label>
+                        <input type="text" placeholder="JavaScript, Debugging, Review">
+                    </div>
+                    <div class="input-group">
+                        <label>Category</label>
+                        <select>
+                            <option>Web Development</option>
+                            <option>UI/UX Design</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group" style="width: 50%;">
+                    <label>Urgency</label>
+                    <select><option>High</option></select>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-secondary">Apply AI suggestions</button>
+                    <button class="btn-primary">Publish request</button>
+                </div>
+            </section>
+
+            <aside class="ai-assistant-card">
+                <p class="ai-label">AI ASSISTANT</p>
+                <h2>Smart request guidance</h2>
+                <div class="ai-info-row"><span>Suggested category</span><strong>Community</strong></div>
+                <div class="ai-info-row"><span>Detected urgency</span><strong>Low</strong></div>
+                <div class="ai-info-row"><span>Suggested tags</span><p>Add more detail for smarter tags</p></div>
+                <div class="ai-info-row"><span>Rewrite suggestion</span><p>Start describing the challenge to generate a stronger version.</p></div>
+            </aside>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>

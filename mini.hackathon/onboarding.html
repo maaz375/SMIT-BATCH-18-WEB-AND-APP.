@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Helplytics - Complete Your Profile</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .onboarding-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .role-card {
+            background: white;
+            padding: 30px;
+            border-radius: 24px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: left;
+        }
+        .role-card:hover { border-color: var(--teal); transform: translateY(-5px); }
+        .role-card.active { border-color: var(--teal); background: #f0fdfa; }
+        .role-card h3 { margin: 15px 0 10px; }
+        .role-card p { font-size: 14px; color: #666; line-height: 1.5; }
+        .icon-box { 
+            width: 50px; height: 50px; background: #eee; border-radius: 12px; 
+            display: flex; align-items: center; justify-content: center; font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="text-align: center; padding-top: 80px;">
+        <p class="overline-teal">STEP 01</p>
+        <h1 style="font-size: 40px;">How do you want to participate?</h1>
+        <p style="color: #666;">Choose an identity to customize your dashboard experience.</p>
+
+        <div class="onboarding-grid">
+            <!-- Option 1 -->
+            <div class="role-card" onclick="selectRole(this, 'seeker')">
+                <div class="icon-box">🔍</div>
+                <h3>I Need Help</h3>
+                <p>I want to post requests and get AI-powered insights for my projects.</p>
+            </div>
+
+            <!-- Option 2 -->
+            <div class="role-card" onclick="selectRole(this, 'helper')">
+                <div class="icon-box">🤝</div>
+                <h3>I Can Help</h3>
+                <p>I want to browse community requests and offer my expertise to others.</p>
+            </div>
+
+            <!-- Option 3 -->
+            <div class="role-card" onclick="selectRole(this, 'both')">
+                <div class="icon-box">⚡</div>
+                <h3>Both</h3>
+                <p>I want the full experience: asking for help and giving it back to the community.</p>
+            </div>
+        </div>
+
+        <button class="btn-primary" style="margin-top: 50px; width: 300px;" onclick="nextStep()">Continue</button>
+    </div>
+
+    <script>
+        let selectedRole = "";
+        function selectRole(element, role) {
+            document.querySelectorAll('.role-card').forEach(card => card.classList.remove('active'));
+            element.classList.add('active');
+            selectedRole = role;
+        }
+
+        function nextStep() {
+            if(!selectedRole) return alert("Please select a role!");
+            localStorage.setItem('userRole', selectedRole);
+            window.location.href = 'skills.html'; // Agla step: Skills Selection
+        }
+    </script>
+</body>
+<script src="js/script.js"></script>
+</html>

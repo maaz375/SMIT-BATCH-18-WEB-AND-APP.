@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - HelpHub AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/messages.css">
+</head>
+<body>
+
+    <!-- Precise Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="brand"><span class="logo-h">H</span> HelpHub AI</div>
+            </div>
+            
+            <div class="nav-center">
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="explore.html" class="nav-link">Explore</a>
+                <a href="messages.html" class="nav-pill active">Messages</a>
+            </div>
+            
+            <div class="nav-right">
+                <!-- Spacing balance for layout -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        <!-- Hero Header -->
+        <header class="msg-hero">
+            <p class="label">INTERACTION / MESSAGING</p>
+            <h1>Keep support moving through direct communication.</h1>
+            <p class="subtitle">Basic messaging gives helpers and requesters a clear follow-up path once a match happens.</p>
+        </header>
+
+        <div class="content-grid">
+            <!-- Left Side: Conversation Stream -->
+            <section class="msg-stream">
+                <p class="section-label">CONVERSATION STREAM</p>
+                <h2 class="title-large">Recent messages</h2>
+
+                <div class="message-item">
+                    <div class="msg-header">
+                        <strong>Ayesha Khan → Sara Noor</strong>
+                        <span class="timestamp">09:45 AM</span>
+                    </div>
+                    <p class="msg-preview">I checked your portfolio request. Share the breakpoint screenshots and I can suggest fixes.</p>
+                </div>
+
+                <div class="message-item">
+                    <div class="msg-header">
+                        <strong>Hassan Ali → Ayesha Khan</strong>
+                        <span class="timestamp">11:10 AM</span>
+                    </div>
+                    <p class="msg-preview">Your event poster concept is solid. I would tighten the CTA and reduce the background texture.</p>
+                </div>
+            </section>
+
+            <!-- Right Side: Send Message Form -->
+            <aside class="send-panel">
+                <p class="section-label">SEND MESSAGE</p>
+                <h2 class="title-large">Start a conversation</h2>
+
+                <div class="form-group">
+                    <label>To</label>
+                    <select>
+                        <option>Ayesha Khan</option>
+                        <option>Sara Noor</option>
+                        <option>Hassan Ali</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Share support details, ask for files, or suggest next steps."></textarea>
+                </div>
+
+                <button class="send-btn">Send</button>
+            </aside>
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>
