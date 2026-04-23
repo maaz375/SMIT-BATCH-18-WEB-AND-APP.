@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="forget.css">
+    <title>Forget Password</title>
+</head>
+
+<body>
+
+
+
+    <div class="div1">
+
+        <h1>Forget Password</h1>
+
+        <!-- Email -->
+        <input type="email" id="email" placeholder="Enter your email">
+        <button id="emailBtn" onclick="checkEmail()">Send OTP</button>
+
+        <!-- OTP (start me disabled) -->
+        <input type="text" id="otp" placeholder="Enter OTP" disabled>
+        <button id="otpBtn" onclick="verifyOTP()" disabled>Verify OTP</button>
+
+        <!-- Password -->
+        <div id="passBox" style="display:none;">
+            <input type="password" id="newPassword" placeholder="New Password">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+            <button id="resetBtn" disabled onclick="resetPassword()">Reset Password</button>
+        </div>
+
+
+        <p class="p4">Remember Password?</p>
+
+
+        <div class="log">
+            <a href="login.html">login</a>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="forget.js"></script>
+</body>
+
+</html>

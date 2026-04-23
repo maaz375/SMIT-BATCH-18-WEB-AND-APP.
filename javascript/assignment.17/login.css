@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.div1 {
+    margin: 120px 0px 0px 490px;
+    border-radius: 40px;
+    background: linear-gradient(to bottom, rgba(246, 246, 246, 0.265), #d5d5d585);
+    width: 510px;
+    height: 450px;
+}
+
+h1 {
+    padding: 30px 0px 0px 31px;
+    color: #6115dc;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.p1 {
+    padding: 15px 0px 0px 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.p2-1 {
+    padding: 40px 0px 0px 150px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.p2 {
+    padding: 10px 0px 0px 150px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#email {
+    width: 210px;
+    height: 30px;
+    margin: 5px 0px 0px 140px;
+    border: 1px solid #00000085;
+    outline: 1px solid #00000085;
+    border-radius: 50px;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: transform 0.5s ease;
+}
+
+#email:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+#password {
+    width: 210px;
+    height: 30px;
+    margin: 5px 0px 0px 140px;
+    border: 1px solid #00000085;
+    outline: 1px solid #00000085;
+    border-radius: 50px;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: transform 0.5s ease;
+}
+
+#password:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.fp{
+    margin: 0px 0px 0px 250px;
+    transition: transform 0.5s ease;
+}
+
+.fp:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.a1{
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+}
+
+button {
+    margin: 25px 0px 0px 183px;
+    padding-bottom: 3px;
+    background-color: #6115dc;
+    border: 0;
+    color: #D8D8D8;
+    border-radius: 40px;
+    width: 120px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: transform 0.5s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: rgb(92, 11, 224);
+    color: #e1e1e1;
+}
+
+.p3{
+    margin: 38px 0px 0px 35px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.log{
+    margin: -18px 0px 0px 230px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}

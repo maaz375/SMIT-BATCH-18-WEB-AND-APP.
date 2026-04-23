@@ -523,4 +523,60 @@
 
 
 
-//         student management system
+//         promises
+
+// console.log('hello');
+
+// setTimeout(() => {
+//     console.log('set');
+// }, 1000)
+
+
+// console.log('baad');
+
+
+
+// new Promise((resolve, reject) => {
+//     let car = true;
+//     if(car){
+//         car = true;
+//         console.log('kam ho gya');
+//         resolve()
+//     }else{
+//         console.log('kam nhi huwa');
+//         reject()
+//     }
+    
+// }).then((res) => console.log('then chala') )
+// .catch((err) => console.log('error chala'))
+// .finally((fin) => console.log('final chala'))
+
+
+
+//                       EVENT LOOP
+
+//       1. settime out
+//       2. async await
+//       3. promise
+//       4. web apis
+//       5. call stack
+//       6. 
+
+
+
+
+let user = 'maaz';
+
+setTimeout(() => {
+    console.log('set time out');
+},0);
+
+
+console.log('user', user);
+
+new Promise ((resolve, reject) => {
+    console.log('promise chala');
+    resolve();
+});
+
+
