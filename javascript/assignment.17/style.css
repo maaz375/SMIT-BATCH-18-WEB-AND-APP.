@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 84px;
 }
 
 body {
@@ -19,15 +20,34 @@ body {
     align-items: center;
     padding: 24px;
     background: linear-gradient(135deg, #f8f9ff, #eef2ff);
+    color: #1c1c28;
 }
 
 .welcome-card {
+    position: relative;
     border-radius: 40px;
     background: linear-gradient(to bottom, rgba(246, 246, 246, 0.265), #d5d5d585);
     width: min(100%, 550px);
     min-height: 640px;
     padding: 0 0 30px;
     box-shadow: 0 18px 40px rgba(97, 21, 220, 0.12);
+    overflow: hidden;
+}
+
+.mobile-topbar,
+.mobile-menu {
+    display: none;
+}
+
+.intro-section,
+.about-section,
+.account-section {
+    scroll-margin-top: 84px;
+}
+
+.visual-wrap {
+    display: flex;
+    justify-content: flex-end;
 }
 
 h1 {
@@ -84,6 +104,7 @@ img {
     font-weight: 500;
     font-size: 15px;
     transition: transform 0.5s ease;
+    cursor: pointer;
 }
 
 .btn1:hover {
@@ -111,6 +132,7 @@ img {
     font-weight: 500;
     font-size: 15px;
     transition: transform 0.5s ease;
+    cursor: pointer;
 }
 
 .btn2:hover {
@@ -122,14 +144,109 @@ img {
 
 @media (max-width: 767px) {
     body {
-        padding: 16px;
+        display: block;
+        padding: 76px 16px 16px;
         align-items: flex-start;
+    }
+
+    .mobile-topbar {
+        position: fixed;
+        inset: 0 0 auto;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        background: rgba(248, 249, 255, 0.95);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 10px 24px rgba(97, 21, 220, 0.08);
+    }
+
+    .brand-link {
+        color: #6115dc;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        width: 44px;
+        height: 44px;
+        border: 0;
+        border-radius: 14px;
+        background: #6115dc;
+        padding: 0 12px;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        border-radius: 999px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .menu-toggle.is-open span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .menu-toggle.is-open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.is-open span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 68px;
+        left: 16px;
+        right: 16px;
+        z-index: 19;
+        display: grid;
+        gap: 10px;
+        padding: 16px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 18px 36px rgba(97, 21, 220, 0.14);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-12px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    }
+
+    .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .mobile-menu a,
+    .mobile-menu button {
+        width: 100%;
+        border: 0;
+        border-radius: 16px;
+        padding: 12px 14px;
+        background: #f3edff;
+        color: #6115dc;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: left;
+        text-decoration: none;
+        cursor: pointer;
     }
 
     .welcome-card {
         border-radius: 28px;
         min-height: auto;
         padding-bottom: 24px;
+        width: 100%;
     }
 
     h1 {
@@ -148,6 +265,7 @@ img {
 
     ul {
         padding: 20px 18px 0 34px;
+        line-height: 1.6;
     }
 
     img {
@@ -171,5 +289,25 @@ img {
 
     .welcome-card {
         width: min(100%, 620px);
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .p1,
+    .p2,
+    .p3,
+    ul {
+        font-size: 16px;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
     }
 }

@@ -13,13 +13,31 @@
 </head>
 
 <body>
+    <header class="mobile-topbar">
+        <a class="brand-link" href="#top">Social Lite</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
 
-    <div class="welcome-card">
-        <h1>Welcome</h1>
+    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <a href="#about">About</a>
+        <a href="#account">Account</a>
+        <button type="button" onclick="goLogin()">Log in</button>
+        <button type="button" onclick="goSignup()">Sign up</button>
+    </nav>
 
-         <p class="p1">Please login or sign up to continue using our app.</p>
+    <div class="welcome-card" id="top">
+        <section class="intro-section">
+            <h1>Welcome</h1>
 
-         <h3>About App:</h3>
+            <p class="p1">Please login or sign up to continue using our app.</p>
+        </section>
+
+        <section class="about-section" id="about">
+            <h3>About App:</h3>
 
             <ul>
                 <li>Express. Connect. Engage.</li>
@@ -27,18 +45,19 @@
                 <li> Share posts and interact effortlessly.</li>
                 <li> Simple, refined, and built for you.</li>
             </ul>
-       
+        </section>
 
+        <div class="visual-wrap">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPYt6SU1GN6vEwS-trTHFWW5G8ylMfsMHkBw&s">
+        </div>
 
-
+        <section class="account-section" id="account">
             <p class="p2">Do you already have an account?</p>
-            <button class="btn1"  onclick="goLogin()">log in</button>
+            <button class="btn1" onclick="goLogin()">log in</button>
 
             <p class="p3">Don't have any account? Sign up to get started</p>
-            <button class="btn2"  onclick="goSignup()">Sign up</button>
-
-
+            <button class="btn2" onclick="goSignup()">Sign up</button>
+        </section>
     </div>
 
 
