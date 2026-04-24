@@ -1,0 +1,361 @@
+/* Shared responsive behavior across HelpHub pages */
+
+.mobile-nav-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(17, 38, 31, 0.12);
+    border-radius: 14px;
+    background: #fdfcf9;
+    color: #11261f;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.mobile-nav-toggle span,
+.mobile-nav-toggle::before,
+.mobile-nav-toggle::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 999px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.mobile-nav-toggle span {
+    position: relative;
+}
+
+.mobile-nav-toggle::before {
+    transform: translateY(-6px);
+}
+
+.mobile-nav-toggle::after {
+    transform: translateY(6px);
+}
+
+.navbar.is-open .mobile-nav-toggle span {
+    opacity: 0;
+}
+
+.navbar.is-open .mobile-nav-toggle::before {
+    transform: translateY(2px) rotate(45deg);
+}
+
+.navbar.is-open .mobile-nav-toggle::after {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.navbar .nav-links,
+.navbar .nav-center,
+.navbar .nav-actions,
+.navbar .nav-right {
+    min-width: 0;
+}
+
+.navbar .nav-links,
+.navbar .nav-center {
+    flex-wrap: wrap;
+}
+
+.navbar .nav-actions,
+.navbar .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.navbar .nav-links a,
+.navbar .nav-center a {
+    white-space: nowrap;
+}
+
+.stats-row,
+.tag-group,
+.skill-group,
+.card-tags,
+.skill-pills,
+.hero-actions,
+.form-actions,
+.rec-tags {
+    flex-wrap: wrap;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1199px) {
+    .container,
+    .main-wrapper,
+    .nav-container {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    h1,
+    .hero-section h1,
+    .msg-hero h1,
+    .create-hero h1,
+    .profile-hero h1,
+    .explore-hero h1 {
+        font-size: clamp(2.75rem, 7vw, 4.25rem) !important;
+        letter-spacing: -0.04em !important;
+    }
+
+    .dark-card h2,
+    .sidebar-title,
+    .feed-header h2,
+    .title-large,
+    .section-title,
+    .ai-assistant-card h2,
+    .flex-title h2 {
+        font-size: clamp(2rem, 5vw, 3rem) !important;
+    }
+
+    .hero-split,
+    .create-grid,
+    .dashboard-content,
+    .leaderboard-grid,
+    .content-grid,
+    .explore-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .flow-grid,
+    .request-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar,
+    .nav-container {
+        gap: 16px;
+    }
+
+    .navbar .live-signal {
+        display: none;
+    }
+
+    .hero-split,
+    .create-grid,
+    .dashboard-content,
+    .content-grid,
+    .explore-grid,
+    .leaderboard-grid {
+        gap: 24px !important;
+    }
+
+    .stats-row,
+    .flow-grid,
+    .request-grid,
+    .stats-grid,
+    .form-row,
+    .row {
+        grid-template-columns: 1fr !important;
+    }
+
+    .stats-row {
+        display: grid !important;
+    }
+
+    .flex-title,
+    .feed-header,
+    .card-footer,
+    .msg-header,
+    .rank-item {
+        align-items: flex-start !important;
+        flex-direction: column;
+    }
+
+    .card-footer,
+    .msg-header,
+    .rank-item {
+        gap: 12px;
+    }
+
+    .hero-section,
+    .create-hero,
+    .msg-hero,
+    .profile-hero,
+    .explore-hero,
+    .ai-hero,
+    .dark-card,
+    .rankings-card,
+    .badge-card,
+    .public-profile,
+    .edit-profile,
+    .msg-stream,
+    .send-panel,
+    .form-container,
+    .ai-assistant-card,
+    .sidebar-filters,
+    .stat-box,
+    .req-card,
+    .flow-box {
+        padding: 32px !important;
+        border-radius: 28px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        position: relative;
+        padding: 18px 20px !important;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .nav-container {
+        width: 100%;
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .nav-left,
+    .nav-brand,
+    .brand {
+        min-width: 0;
+    }
+
+    .mobile-nav-toggle {
+        display: inline-flex;
+        margin-left: auto;
+    }
+
+    .navbar .nav-links,
+    .navbar .nav-center,
+    .navbar .nav-actions,
+    .navbar .nav-right {
+        display: none !important;
+        width: 100%;
+        background: rgba(253, 252, 249, 0.96);
+        border: 1px solid rgba(17, 38, 31, 0.08);
+        border-radius: 20px;
+        padding: 16px;
+    }
+
+    .navbar.is-open .nav-links,
+    .navbar.is-open .nav-center,
+    .navbar.is-open .nav-actions,
+    .navbar.is-open .nav-right {
+        display: flex !important;
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+
+    .navbar .nav-links a,
+    .navbar .nav-center a,
+    .navbar .nav-actions a,
+    .navbar .nav-right a,
+    .navbar .nav-actions button,
+    .navbar .nav-right button,
+    .navbar .btn-join {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .nav-links a,
+    .navbar .nav-center a {
+        padding: 12px 16px;
+        border-radius: 14px;
+        margin: 0 !important;
+    }
+
+    .navbar .nav-links a.active,
+    .navbar .nav-center a.active,
+    .navbar .nav-center .nav-pill.active {
+        padding: 12px 16px !important;
+    }
+
+    .container,
+    .main-wrapper {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .hero-split,
+    .dashboard-content,
+    .create-grid,
+    .content-grid,
+    .explore-grid,
+    .leaderboard-grid,
+    .flow-grid,
+    .request-grid,
+    .stats-grid {
+        gap: 20px !important;
+    }
+
+    h1,
+    .hero-section h1,
+    .msg-hero h1,
+    .create-hero h1,
+    .profile-hero h1,
+    .explore-hero h1,
+    .hero-content h1 {
+        font-size: clamp(2.2rem, 12vw, 3.25rem) !important;
+        line-height: 1.08 !important;
+    }
+
+    .description,
+    .subtitle,
+    .subtext {
+        font-size: 15px !important;
+    }
+
+    .hero-actions,
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions button,
+    .form-actions button,
+    .flex-title button,
+    .go-feed,
+    .open-btn,
+    .btn-details,
+    .send-btn,
+    .save-btn,
+    .btn-demo,
+    .btn-post {
+        width: 100%;
+    }
+
+    .notif-card {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 12px;
+    }
+
+    .notif-info h4 {
+        max-width: none !important;
+    }
+
+    .stat-box h2,
+    .stat-main,
+    .dark-card h2,
+    .section-title,
+    .title-large,
+    .sidebar-title,
+    .ai-assistant-card h2,
+    .feed-header h2,
+    .flex-title h2 {
+        word-break: break-word;
+    }
+}

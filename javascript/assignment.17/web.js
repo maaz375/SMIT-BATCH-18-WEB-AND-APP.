@@ -5,21 +5,27 @@ let editIndex = null;
 let deletedPost = null;
 let deletedIndex = null;
 let undoTimer = null;
+let menuToggleBtn = document.getElementById("menuToggle");
+let mobileMenu = document.getElementById("mobileMenu");
 
-// 🔐 CHECK LOGIN
 if (!currentUser) {
   alert("Please login first!");
   window.location.href = "login.html";
 }
 
-// 👤 USER NAME
 document.getElementById("welcomeUser").innerText =
   currentUser.firstName + " " + currentUser.lastName;
 
-// INIT
+if (menuToggleBtn && mobileMenu) {
+  menuToggleBtn.addEventListener("click", () => {
+    let isOpen = mobileMenu.classList.toggle("is-open");
+    menuToggleBtn.classList.toggle("is-open", isOpen);
+    menuToggleBtn.setAttribute("aria-expanded", String(isOpen));
+  });
+}
+
 renderPosts();
 
-// ================= CREATE POST (TEXT + OPTIONAL IMAGE) =================
 document.getElementById("postBtn").addEventListener("click", () => {
   let content = document.getElementById("content").value.trim();
   let imageFile = document.getElementById("imageInput").files[0];
@@ -60,7 +66,6 @@ document.getElementById("postBtn").addEventListener("click", () => {
   }
 });
 
-// ================= RENDER =================
 function renderPosts(filter = "") {
   let postsDiv = document.getElementById("posts");
   postsDiv.innerHTML = "";
@@ -86,7 +91,7 @@ function renderPosts(filter = "") {
         <div class="d-flex gap-2 align-items-center">
 
           <button class="btn btn-outline-danger btn-sm" onclick="likePost(${index}, this)">
-            ❤️ ${post.likes}
+            &#10084;&#65039; ${post.likes}
           </button>
 
           ${post.email === currentUser.email ? `
@@ -96,12 +101,11 @@ function renderPosts(filter = "") {
 
         </div>
 
-        <!-- COMMENTS -->
         <input type="text" id="c${index}" class="form-control form-control-sm mt-2" placeholder="Comment...">
         <button class="btn btn-sm btn-primary mt-1" onclick="addComment(${index})">Comment</button>
 
         <div>
-          ${post.comments.map(c => `<p>💬 ${c}</p>`).join("")}
+          ${post.comments.map(c => `<p>&#128172; ${c}</p>`).join("")}
         </div>
 
       </div>
@@ -109,7 +113,6 @@ function renderPosts(filter = "") {
   });
 }
 
-// ================= LIKE =================
 function likePost(index, btn) {
   posts[index].likes++;
   btn.classList.add("like-animate");
@@ -120,7 +123,6 @@ function likePost(index, btn) {
   renderPosts();
 }
 
-// ================= COMMENTS =================
 function addComment(index) {
   let input = document.getElementById(`c${index}`);
   let text = input.value.trim();
@@ -133,17 +135,14 @@ function addComment(index) {
   renderPosts();
 }
 
-// ================= SEARCH =================
 document.getElementById("search").addEventListener("input", (e) => {
   renderPosts(e.target.value);
 });
 
-// ================= DARK MODE =================
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
 
-// ================= DELETE + UNDO =================
 function deletePost(index) {
   if (!confirm("Delete post?")) return;
 
@@ -176,7 +175,6 @@ function undoDelete() {
   }
 }
 
-// ================= EDIT =================
 function openEdit(index) {
   editIndex = index;
 
@@ -206,13 +204,11 @@ document.getElementById("updateBtn").addEventListener("click", () => {
   bootstrap.Modal.getInstance(document.getElementById("editModal")).hide();
 });
 
-// ================= LOGOUT =================
 function logout() {
   localStorage.removeItem("currentUser");
   window.location.href = "login.html";
 }
 
-// ================= HELPERS =================
 function clearInputs() {
   document.getElementById("content").value = "";
   document.getElementById("imageInput").value = "";

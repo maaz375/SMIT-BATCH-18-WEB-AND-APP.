@@ -11,35 +11,46 @@
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="container mt-3 d-flex justify-content-between align-items-center">
-  <h5 id="welcomeUser"></h5>
+<header class="top-shell">
+  <div class="container mt-3">
+    <div class="topbar-card">
+      <div class="topbar-main">
+        <h5 id="welcomeUser"></h5>
 
-  <div class="d-flex gap-2">
-    <button class="btn btn-dark btn-sm" onclick="toggleDarkMode()">🌙</button>
-    <button class="btn btn-danger btn-sm" onclick="logout()">Logout</button>
+        <button class="hamburger-btn d-md-none" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="topbar-actions d-none d-md-flex gap-2">
+        <button class="btn btn-dark btn-sm" onclick="toggleDarkMode()">Dark Mode</button>
+        <button class="btn btn-danger btn-sm" onclick="logout()">Logout</button>
+      </div>
+
+      <div class="mobile-menu d-md-none" id="mobileMenu">
+        <div class="mobile-actions">
+          <button class="btn btn-dark btn-sm" onclick="toggleDarkMode()">Dark Mode</button>
+          <button class="btn btn-danger btn-sm" onclick="logout()">Logout</button>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</header>
 
-<!-- SEARCH -->
 <div class="container mt-3">
   <input type="text" id="search" class="form-control" placeholder="Search posts or users...">
 </div>
 
-<!-- CREATE POST -->
 <div class="container d-flex justify-content-center mt-3">
   <div class="card p-4 main-card w-100">
-
     <textarea id="content" class="form-control mb-2" placeholder="What's on your mind?"></textarea>
-
     <input type="file" id="imageInput" class="form-control mb-2">
-
     <button class="btn btn-primary w-100" id="postBtn">Post</button>
-
   </div>
 </div>
 
-<!-- UNDO -->
 <div class="container mt-3">
   <div id="undoBox" class="alert alert-warning d-none d-flex justify-content-between">
     <span>Post deleted</span>
@@ -47,16 +58,13 @@
   </div>
 </div>
 
-<!-- POSTS -->
 <div class="container mt-3">
   <div id="posts"></div>
 </div>
 
-<!-- EDIT MODAL -->
 <div class="modal fade" id="editModal">
   <div class="modal-dialog">
     <div class="modal-content">
-
       <div class="modal-header">
         <h5>Edit Post</h5>
         <button class="btn-close" data-bs-dismiss="modal"></button>
@@ -69,7 +77,6 @@
       <div class="modal-footer">
         <button class="btn btn-success" id="updateBtn">Update</button>
       </div>
-
     </div>
   </div>
 </div>

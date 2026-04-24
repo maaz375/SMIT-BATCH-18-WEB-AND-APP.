@@ -20,28 +20,30 @@
 
         <h1>Forget Password</h1>
 
-        <!-- Email -->
-        <input type="email" id="email" placeholder="Enter your email">
-        <button id="emailBtn" onclick="checkEmail()">Send OTP</button>
+        <div class="form-area">
+            <!-- Email -->
+            <input type="email" id="email" placeholder="Enter your email">
+            <button id="emailBtn" onclick="checkEmail()">Send OTP</button>
 
-        <!-- OTP (start me disabled) -->
-        <input type="text" id="otp" placeholder="Enter OTP" disabled>
-        <button id="otpBtn" onclick="verifyOTP()" disabled>Verify OTP</button>
+            <!-- OTP (start me disabled) -->
+            <input type="text" id="otp" placeholder="Enter OTP" disabled>
+            <button id="otpBtn" onclick="verifyOTP()" disabled>Verify OTP</button>
 
-        <!-- Password -->
-        <div id="passBox" style="display:none;">
-            <input type="password" id="newPassword" placeholder="New Password">
-            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <!-- Password -->
+            <div id="passBox" style="display:none;">
+                <input type="password" id="newPassword" placeholder="New Password">
+                <input type="password" id="confirmPassword" placeholder="Confirm Password">
 
-            <button id="resetBtn" disabled onclick="resetPassword()">Reset Password</button>
-        </div>
-
-
-        <p class="p4">Remember Password?</p>
+                <button id="resetBtn" disabled onclick="resetPassword()">Reset Password</button>
+            </div>
 
 
-        <div class="log">
-            <a href="login.html">login</a>
+            <p class="p4">Remember Password?</p>
+
+
+            <div class="log">
+                <a href="login.html">login</a>
+            </div>
         </div>
 
     </div>
